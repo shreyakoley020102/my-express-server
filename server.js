@@ -2,8 +2,16 @@ const express = require("express");
 
 const app=express();
 
-app.get("/", function(request, response){
-  response.send("Hello, world!");
+app.get("/", function(req, res){
+  res.send("Hello, world!");
+});
+
+app.get("/contact", function(req,res){
+  res.send("Don't contact me");
+});
+
+app.get("/about", function(req,res){
+  res.send("Hey!!! I am Shreya");
 });
 
 app.listen(3000, function(){

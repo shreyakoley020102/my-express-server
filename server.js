@@ -14,6 +14,11 @@ app.get("/about", function(req,res){
   res.send("Hey!!! I am Shreya");
 });
 
+app.get("/hobbies", function(req,res){
+  res.send("Drinking coffee and sketching");
+});
+
+
 app.listen(3000, function(){
   console.log("Server started on port 3000");
 });
